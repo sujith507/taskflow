@@ -63,8 +63,14 @@ cd ..
 
 ### 3. Environment Setup
 
-Create a `.env` file in the `server` directory with the following variables:
+Create a `.env` file in the root directory (for frontend) and `server` directory (for backend) with the following variables:
 
+#### Frontend .env
+```env
+VITE_API_URL=https://your-backend-api-url.com/api
+```
+
+#### Backend .env (in server directory)
 ```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
@@ -141,6 +147,12 @@ The frontend can be deployed to platforms like Vercel, Netlify, or GitHub Pages.
 ### Backend Deployment
 The backend can be deployed to platforms like Heroku, Railway, or DigitalOcean.
 
+## 🌐 Live Demo
+
+You can view the live demo of the frontend at: https://sujith507.github.io/taskflow/
+
+**Note**: The live demo uses a mock API for demonstration purposes. For full functionality, you'll need to set up the backend API.
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -156,4 +168,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact the repository owner.
-# taskflow
