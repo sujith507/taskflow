@@ -43,8 +43,8 @@ Before running this application, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/sujith507/TASKFLOW.git
-cd TASKFLOW
+git clone https://github.com/your-username/taskflow.git
+cd taskflow
 ```
 
 ### 2. Install Dependencies
@@ -91,7 +91,7 @@ The application will be running at:
 ## 📁 Project Structure
 
 ```
-TASKFLOW/
+taskflow/
 ├── public/                 # Static assets
 ├── server/                 # Backend application
 │   ├── middleware/         # Authentication middleware
@@ -156,5 +156,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact the repository owner.
-# MyTaskFlow
-# MyTaskFlow-V2
+# taskflow
