@@ -1,0 +1,9 @@
+- [x] Create backend directory and initialize Node.js project
+- [x] Install backend dependencies (express, mongoose, bcryptjs, jsonwebtoken, cors, dotenv)
+- [x] Set up Express server and MongoDB connection
+- [x] Create User and Task models with Mongoose
+- [x] Implement authentication routes (register, login) with JWT
+- [x] Implement task CRUD routes with authentication middleware
+- [x] Update frontend to use new API endpoints instead of Supabase
+- [x] Remove Supabase integration and update environment variables
+- [ ] Test the full MERN stack flow
