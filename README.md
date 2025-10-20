@@ -1,73 +1,158 @@
-# Welcome to your Lovable project
+# TaskFlow - MERN Stack Task Management Application
 
-## Project info
+A full-stack task management application built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring user authentication, task CRUD operations, and a modern responsive UI.
 
-**URL**: https://lovable.dev/projects/8b7b2f6a-ae7d-43da-b64d-bd2a03ffd6d1
+## 🚀 Features
 
-## How can I edit this code?
+- **User Authentication**: Secure login and registration with JWT tokens
+- **Task Management**: Create, read, update, and delete tasks
+- **Priority Levels**: Set task priorities (low, medium, high)
+- **Due Dates**: Assign and track task deadlines
+- **Responsive Design**: Modern UI built with Tailwind CSS and shadcn/ui components
+- **Dark/Light Theme**: Toggle between themes for better user experience
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+### Frontend
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Modern UI components
+- **React Router** - Client-side routing
+- **Axios** - HTTP client for API calls
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8b7b2f6a-ae7d-43da-b64d-bd2a03ffd6d1) and start prompting.
+### Backend
+- **Node.js** - Runtime environment
+- **Express.js** - Web framework
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB object modeling
+- **JWT** - JSON Web Tokens for authentication
+- **bcryptjs** - Password hashing
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Prerequisites
 
-**Use your preferred IDE**
+Before running this application, make sure you have the following installed:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Node.js** (v16 or higher)
+- **MongoDB** (local installation or MongoDB Atlas account)
+- **npm** or **yarn** package manager
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+### 1. Clone the Repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone https://github.com/sujith507/TASKFLOW.git
+cd TASKFLOW
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install Dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+#### Frontend Dependencies
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+#### Backend Dependencies
+```bash
+cd server
+npm install
+cd ..
+```
+
+### 3. Environment Setup
+
+Create a `.env` file in the `server` directory with the following variables:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+```
+
+### 4. Start the Application
+
+#### Start Backend Server
+```bash
+cd server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+#### Start Frontend (in a new terminal)
+```bash
+npm run dev
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application will be running at:
+- **Frontend**: http://localhost:5173
+- **Backend**: http://localhost:5000
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+TASKFLOW/
+├── public/                 # Static assets
+├── server/                 # Backend application
+│   ├── middleware/         # Authentication middleware
+│   ├── models/            # MongoDB models
+│   ├── routes/            # API routes
+│   ├── server.js          # Main server file
+│   └── package.json       # Backend dependencies
+├── src/                   # Frontend application
+│   ├── components/        # Reusable UI components
+│   ├── pages/            # Page components
+│   ├── services/         # API service functions
+│   ├── types/            # TypeScript type definitions
+│   └── ...
+├── package.json          # Frontend dependencies
+└── README.md             # Project documentation
+```
 
-## What technologies are used for this project?
+## 🔧 Available Scripts
 
-This project is built with:
+### Frontend
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Backend
+- `npm run dev` - Start development server with nodemon
+- `npm start` - Start production server
 
-## How can I deploy this project?
+## 🌐 API Endpoints
 
-Simply open [Lovable](https://lovable.dev/projects/8b7b2f6a-ae7d-43da-b64d-bd2a03ffd6d1) and click on Share -> Publish.
+### Authentication
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - User login
 
-## Can I connect a custom domain to my Lovable project?
+### Tasks
+- `GET /api/tasks` - Get all tasks for authenticated user
+- `POST /api/tasks` - Create new task
+- `PUT /api/tasks/:id` - Update task
+- `DELETE /api/tasks/:id` - Delete task
 
-Yes, you can!
+## 🚀 Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Frontend Deployment
+The frontend can be deployed to platforms like Vercel, Netlify, or GitHub Pages.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Backend Deployment
+The backend can be deployed to platforms like Heroku, Railway, or DigitalOcean.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+
+If you have any questions or suggestions, feel free to open an issue or contact the repository owner.
